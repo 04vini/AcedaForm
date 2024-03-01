@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Banco de Vagas - aceda</title>
+  <link rel="stylesheet" href="./css/bancodevagas.css">
+</head>
+<body>
+  <h1>Insira seus dados para cadastrar-se no Banco de Vagas da ACEDA.</h1>
+  <form action="enviar.php" method="post">
+    <label for="nome">Nome Completo:</label>
+    <input type="text" id="nome" name="nome" required placeholder="Digite seu nome completo">
+    <br>
+    <br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required placeholder="seuemail@exemplo.com">
+    <br>
+    <br>
+    <label for="telefone">Telefone:</label>
+    <input type="telefone" id="telefone" name="telefone" required placeholder="+55 11 912340-5678">
+
+    <br>
+    <br>
+    <label for="nacionalidade">Nacionalidade:</label>
+    <select id="nacionalidade" name="nacionalidade" required>
+      <option value="">Selecione seu país</option>
+      <option value="Brasil">Brasil</option>
+      <option value="Portugal">Portugal</option>
+      <option value="Argentina">Argentina</option>
+      </select>
+
+
+    <br>
+    <br>
+
+    <label for="area de atuacao">Área de atuação:</label>
+    <input type="area de atuacao" id="area de atuacao" name="area de atuacao" required placeholder="Ex: Administrativo, Produção, Financeiro">
+
+    <br>
+    <br>
+
+    <label for="descricao">Deixe uma Mensagem: </label>
+    <textarea id="descricao" name="descricao" rows="10" cols="50" required placeholder="Descreva em poucas palavras um resumo sobre você e seu curriculo."></textarea>
+
+    <br>
+    <br>
+
+    <label for="curriculo">Currículo:</label>
+    <input type="file" id="curriculo" name="curriculo" required accept=".pdf,.doc,.docx">
+
+    <br>
+    <br>
+    <input type="submit" value="Enviar">
+  </form>
+</body>
+</html>
